@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar__links {
+  text-decoration: none;
+}
+.navbar .navbar__links--name {
+  font-size: 20px;
+  padding: 20px;
+  color: black;
+}
+.navbar .navbar__links--menu {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  border: 1px solid red;
+}/*# sourceMappingURL=main.css.map */
