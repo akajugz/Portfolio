@@ -14,12 +14,24 @@
   display: none;
 }
 
+.intro {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro--title {
+  font-size: 60px;
+  font-weight: lighter;
+}
+.intro--content {
+  font-size: 10px;
+  text-align: left;
+  padding-top: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.intro {
-  border: 1px solid red;
 }/*# sourceMappingURL=main.css.map */

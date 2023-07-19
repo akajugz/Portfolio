@@ -1,0 +1,17 @@
+.intro {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--title {
+        font-size: 60px;
+        font-weight: lighter;
+    }
+
+    &--content {
+        font-size: 10px;
+        text-align: left;
+        padding-top: 30px;
+    }
+}
