@@ -50,4 +50,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.skills {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 20px;
+}
+.skills--content {
+  font-size: 10px;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
