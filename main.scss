@@ -6,6 +6,10 @@
 
 @use "./skills" as *;
 
+@use "./portfolio" as *;
+
+@use "./contact" as *;
+
 * {
     margin: 0;
     padding: 0;

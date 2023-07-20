@@ -1,0 +1,40 @@
+.contact {
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+
+    &--title {
+        font-size: 70px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    
+}
+/*
+.button {
+    text-align: center;
+    border: 1px solid black;
+    width: 170px;
+    height: 40px;
+    margin: 50px auto;
+
+    .button-link {
+        text-decoration: none;
+        padding: 10PX 0 0 0;
+    }
+} */
+
+.button {
+    margin: 20px 70px 20px 70px;
+}
+.button-link {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
