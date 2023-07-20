@@ -46,15 +46,9 @@
   padding: 30px 20px 30px 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* NEED TO ADD DISPLAY: FLEX IN MEDIA QUERIES SO THESE SHOW UP ON DESKTOP SITE */
 .skills {
-  border: 1px solid red;
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 30px;
   margin-top: 20px;
@@ -62,4 +56,41 @@
 .skills--content {
   font-size: 10px;
   text-align: left;
+  padding-right: 20px;
+}
+
+.skills-icons {
+  display: none;
+  justify-content: center;
+}
+.skills-icons--img {
+  height: 60px;
+  margin: 10px 10px 10px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .skills-content {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 100px;
+  }
+  .skills-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-icons--img {
+    height: 60px;
+    margin: 10px 10px 10px 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
