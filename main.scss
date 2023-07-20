@@ -4,25 +4,11 @@
 
 @use "./about" as *;
 
+@use "./skills" as *;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.skills {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin-top: 20px;
-
-    &--title {
-    }
-
-    &--content {
-        font-size: 10px;
-        text-align: left;
-        
-    }
-}
