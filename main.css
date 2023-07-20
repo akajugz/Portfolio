@@ -89,6 +89,34 @@
     margin: 10px 10px 10px 10px;
   }
 }
+.portfolio {
+  margin: 10px;
+  padding: 10px;
+}
+.portfolio--heading {
+  padding: 0 0 20px 0;
+}
+.portfolio .project__photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+}
+.portfolio .project--lang {
+  display: none;
+}
+
+.project-content {
+  display: flex;
+  padding: 10px;
+}
+.project-content__title {
+  padding-top: 10px;
+}
+.project-content--icon {
+  width: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
