@@ -157,6 +157,18 @@
   justify-content: center;
 }
 
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px;
+  margin-top: 60px;
+}
+.footer--link {
+  width: 40px;
+  padding: 0 10px 0 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
