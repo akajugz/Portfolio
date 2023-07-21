@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: center;
+  font-family: "Cormorant Garamond", serif;
 }
 .navbar .navbar__links {
   text-decoration: none;
@@ -9,28 +10,60 @@
   font-size: 20px;
   padding: 20px;
   color: black;
-  font-family: "cormorant-garamond" sans-serif;
 }
 .navbar .navbar__links--menu {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar__links--name {
+    font-size: 40px;
+    padding: 40px;
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar .navbar__links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    float: right;
+  }
+}
 .intro {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.intro--title {
+.intro__title {
   font-size: 60px;
   font-weight: lighter;
 }
-.intro--content {
+.intro__title__content {
+  padding: 20px;
+}
+.intro__title__content--p {
   font-size: 10px;
   text-align: left;
   padding-top: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .intro__title {
+    text-align: center;
+    padding: 30px 0 30px 0;
+  }
+  .intro__content {
+    padding-right: 100px;
+    margin: 30px 80px;
+    height: 150px;
+    text-align: left;
+    font-size: 15px;
+  }
+}
 .about--title {
   padding: 30px;
   margin-top: 20px;
@@ -47,6 +80,29 @@
   padding: 30px 20px 30px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-areas: "title title img" "title title img" "bio bio img" "bio bio img" "bio bio img";
+    margin-bottom: 30px;
+  }
+  .title {
+    grid-area: title;
+    margin-left: 20px;
+  }
+  .img {
+    grid-area: img;
+  }
+  .bio {
+    grid-area: bio;
+    margin-left: 20px;
+  }
+  .about--my-photo {
+    height: 420px;
+    width: 320px;
+    margin-right: 40px;
+  }
+}
 /* NEED TO ADD DISPLAY: FLEX IN MEDIA QUERIES SO THESE SHOW UP ON DESKTOP SITE */
 .skills {
   display: none;
@@ -180,4 +236,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
 }/*# sourceMappingURL=main.css.map */

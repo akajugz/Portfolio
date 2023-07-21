@@ -1,17 +1,38 @@
 .intro {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    &--title {
-        font-size: 60px;
-        font-weight: lighter;
-    }
+  &__title {
+    font-size: 60px;
+    font-weight: lighter;
 
-    &--content {
+    &__content {
+      padding: 20px;
+
+      &--p {
         font-size: 10px;
         text-align: left;
         padding-top: 30px;
+      }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    &__title {
+      text-align: center;
+      padding: 30px 0 30px 0;
+    }
+
+    &__content {
+      padding-right: 100px;
+      margin: 30px 80px;
+      height: 150px;
+      text-align: left;
+      font-size: 15px;
+    }
+  }
 }
