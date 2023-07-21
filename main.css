@@ -180,6 +180,60 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio--heading {
+    padding: 0 0 20px 0;
+  }
+  .portfolio .project__photo {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+  }
+  .portfolio .project--lang {
+    display: none;
+  }
+  .desktop-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .desktop-projects .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .project-content .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .project-content__title {
+    display: flex;
+  }
+  .project-content--icon {
+    width: 25px;
+    height: 25px;
+  }
+  .hidden {
+    display: flex;
+  }
+  .heading {
+    display: inline-block;
+    margin-right: 3000px;
+  }
+}
 .contact {
   padding: 20px;
   margin: 20px 20px 20px 20px;
