@@ -12,7 +12,7 @@
   }
 
   &--bio {
-    font-size: 10px;
+    font-size: 15px;
     text-align: left;
     padding: 30px 20px 30px 20px;
   }
@@ -43,6 +43,11 @@
   .bio {
     grid-area: bio;
     margin-left: 20px;
+  }
+
+  .about--bio {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
   }
 
   .about--my-photo {

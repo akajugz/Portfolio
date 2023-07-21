@@ -10,13 +10,12 @@
 
     &__content {
       padding: 20px;
-
-      &--p {
-        font-size: 10px;
-        text-align: left;
-        padding-top: 30px;
-      }
     }
+  }
+  .intro__content--p {
+    font-size: 15px;
+    text-align: left;
+    margin: 60px 0 0 0;
   }
 }
 
@@ -33,6 +32,11 @@
       height: 150px;
       text-align: left;
       font-size: 15px;
+    }
+
+    &--p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 10px;
     }
   }
 }
