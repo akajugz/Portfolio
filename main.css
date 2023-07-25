@@ -7,20 +7,17 @@
   text-decoration: none;
 }
 .navbar .navbar__links--name {
-  font-size: 20px;
+  font-size: 30px;
   padding: 20px;
   color: black;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 .navbar .navbar__links--menu {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .navbar__links--name {
-    font-size: 40px;
-    padding: 40px;
-    margin: 10px 0 0 30px;
-  }
   .navbar {
     justify-content: space-between;
   }
@@ -30,6 +27,10 @@
     padding: 20px;
     float: right;
     color: black;
+  }
+  .navbar .navbar__links--name {
+    font-size: 40px;
+    margin: 10px 0 0 30px;
   }
 }
 .intro {
@@ -353,7 +354,7 @@
 }
 
 .button-link {
-  background-color: white;
+  background-color: rgb(220, 206, 155);
   border: 1px solid black;
   color: black;
   padding: 15px 40px;
@@ -379,7 +380,7 @@
     margin: 20px 40px 20px 40px;
   }
   .button-link {
-    background-color: white;
+    background-color: rgb(220, 206, 155);
     border: 1px solid black;
     color: black;
     padding: 15px 40px;
