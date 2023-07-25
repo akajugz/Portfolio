@@ -15,7 +15,7 @@
   .intro__content--p {
     font-size: 15px;
     text-align: left;
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
 }
 
@@ -28,7 +28,7 @@
 
     &__content {
       padding-right: 100px;
-      margin: 30px 80px;
+      margin: 40px;
       height: 150px;
       text-align: left;
       font-size: 15px;
@@ -36,7 +36,21 @@
 
     &--p {
       font-family: "Cormorant Garamond", serif;
-      font-size: 10px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 60px 60px;
+    
+    .intro__content--p {
+      text-align: center;
+      font-size: 15px;
     }
   }
 }

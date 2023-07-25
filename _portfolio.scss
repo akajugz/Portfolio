@@ -12,10 +12,6 @@
     margin-right: auto;
     width: 330px;
   }
-
-  .project--lang {
-    display: none;
-  }
 }
 
 .project-content {
@@ -25,11 +21,11 @@
 
   &__title {
     display: flex;
-  }
 
-  &--icon {
-    width: 25px;
-    height: 25px;
+    &--icon {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
@@ -54,10 +50,6 @@
       margin-left: 0;
       margin-right: 0;
       width: 200px;
-    }
-
-    .project--lang {
-      display: none;
     }
   }
 
@@ -85,11 +77,71 @@
 
     &__title {
       display: flex;
+
+      &--icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .hidden {
+    display: flex;
+  }
+  .heading {
+    display: inline-block;
+    margin-right: 3000px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    margin: 50px 0 0 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--heading {
+      padding: 0 0 20px 0;
     }
 
-    &--icon {
-      width: 25px;
-      height: 25px;
+    .project__photo {
+      display: flex;
+      margin-left: 0;
+      margin-right: 0;
+      width: 300px;
+    }
+  }
+
+  .desktop-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .project {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .project-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__title {
+      display: flex;
+
+      &--icon {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
   .hidden {

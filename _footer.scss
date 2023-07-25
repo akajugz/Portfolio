@@ -2,12 +2,19 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px;
+    padding: 25px 0 25px;
     margin-top: 60px;
 
 
     &--link {
         width: 40px;
-        padding: 0 10px 0 10px;
+        padding: 0 5px 0 5px;
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer--link {
+        margin: 0 20px 0;
     }
 }
