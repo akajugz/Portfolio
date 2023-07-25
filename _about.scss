@@ -1,20 +1,58 @@
 .about {
+  &--title {
+    padding: 30px;
+    margin-top: 20px;
+  }
 
-    &--title {
-        padding: 30px;
-        margin-top: 20px;
-    }
+  &--my-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
 
-    &--my-photo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 350px;
-    }
+  &--bio {
+    font-size: 15px;
+    text-align: left;
+    padding: 30px 20px 30px 20px;
+  }
+}
 
-    &--bio {
-        font-size: 10px;
-        text-align: left;
-        padding: 30px 20px 30px 20px;
-    }
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-areas:
+      "title title img"
+      "title title img"
+      "bio bio img"
+      "bio bio img"
+      "bio bio img";
+
+    margin-bottom: 30px;
+  }
+
+  .title {
+    grid-area: title;
+    margin-left: 20px;
+  }
+
+  .img {
+    grid-area: img;
+  }
+
+  .bio {
+    grid-area: bio;
+    margin-left: 20px;
+  }
+
+  .about--bio {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+  }
+
+  .about--my-photo {
+    height: 420px;
+    width: 320px;
+    margin-right: 40px;
+  }
 }

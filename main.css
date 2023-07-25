@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: center;
+  font-family: "Cormorant Garamond", serif;
 }
 .navbar .navbar__links {
   text-decoration: none;
@@ -14,22 +15,59 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar__links--name {
+    font-size: 40px;
+    padding: 40px;
+    margin: 10px 0 0 30px;
+    font-size: 40px;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar .navbar__links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    float: right;
+  }
+}
 .intro {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.intro--title {
+.intro__title {
   font-size: 60px;
   font-weight: lighter;
 }
-.intro--content {
-  font-size: 10px;
+.intro__title__content {
+  padding: 20px;
+}
+.intro .intro__content--p {
+  font-size: 15px;
   text-align: left;
-  padding-top: 30px;
+  margin: 60px 0 0 0;
 }
 
+@media screen and (min-width: 768px) {
+  .intro__title {
+    text-align: center;
+    padding: 30px 0 30px 0;
+  }
+  .intro__content {
+    padding-right: 100px;
+    margin: 30px 80px;
+    height: 150px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .intro--p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 10px;
+  }
+}
 .about--title {
   padding: 30px;
   margin-top: 20px;
@@ -41,11 +79,38 @@
   width: 350px;
 }
 .about--bio {
-  font-size: 10px;
+  font-size: 15px;
   text-align: left;
   padding: 30px 20px 30px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-areas: "title title img" "title title img" "bio bio img" "bio bio img" "bio bio img";
+    margin-bottom: 30px;
+  }
+  .title {
+    grid-area: title;
+    margin-left: 20px;
+  }
+  .img {
+    grid-area: img;
+  }
+  .bio {
+    grid-area: bio;
+    margin-left: 20px;
+  }
+  .about--bio {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+  }
+  .about--my-photo {
+    height: 420px;
+    width: 320px;
+    margin-right: 40px;
+  }
+}
 /* NEED TO ADD DISPLAY: FLEX IN MEDIA QUERIES SO THESE SHOW UP ON DESKTOP SITE */
 .skills {
   display: none;
@@ -73,7 +138,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .skills-content {
     font-size: 10px;
@@ -108,15 +173,75 @@
 
 .project-content {
   display: flex;
+  justify-content: space-between;
   padding: 10px;
 }
 .project-content__title {
-  padding-top: 10px;
+  display: flex;
 }
 .project-content--icon {
-  width: 30px;
+  width: 25px;
+  height: 25px;
 }
 
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: 50px 0 0 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio--heading {
+    padding: 0 0 20px 0;
+  }
+  .portfolio .project__photo {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+  }
+  .portfolio .project--lang {
+    display: none;
+  }
+  .desktop-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .desktop-projects .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .project-content .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .project-content__title {
+    display: flex;
+  }
+  .project-content--icon {
+    width: 25px;
+    height: 25px;
+  }
+  .hidden {
+    display: flex;
+  }
+  .heading {
+    display: inline-block;
+    margin-right: 3000px;
+  }
+}
 .contact {
   padding: 20px;
   margin: 20px 20px 20px 20px;
@@ -157,8 +282,48 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+  }
+  .contact--title {
+    font-size: 70px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .button {
+    margin: 20px 40px 20px 40px;
+  }
+  .button-link {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 0 250px 0 250px;
+  }
+}
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px;
+  margin-top: 60px;
+}
+.footer--link {
+  width: 40px;
+  padding: 0 10px 0 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
 }/*# sourceMappingURL=main.css.map */
