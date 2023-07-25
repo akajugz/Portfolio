@@ -254,7 +254,6 @@
   }
   .heading {
     display: inline-block;
-    margin-right: 3000px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -306,6 +305,24 @@
   .heading {
     display: inline-block;
     margin-right: 3000px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio {
+    margin: 50px 0 0 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio--heading {
+    padding: 0 0 20px 0;
+  }
+  .portfolio .project__photo {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 400px;
   }
 }
 .contact {
